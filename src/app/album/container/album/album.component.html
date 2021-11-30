@@ -1,0 +1,19 @@
+<app-breadcrumb [breadcrumb]="breadcrumb"></app-breadcrumb>
+<div class="wm-main-content">
+  <div class="wm-main-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="wm-latestartist-album wm-albummasonry-list">
+            <ul class="row">
+              <div *ngFor="let album of albums">
+                <app-album-item [album]="album"></app-album-item>
+              </div>
+            </ul>
+          </div>
+          <app-pagination></app-pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<li class="col-md-4">
+  <div class="wm-latest-album-slide">
+    <figure>
+      <a href="album-single-post.html" class="graythumb"
+        ><img [src]="album.album_image" alt=""
+      /></a>
+      <figcaption>
+        <a href="album-single-post.html" class="wm-bgcolor"
+          >{{ album.album_count }} Tracks</a
+        >
+      </figcaption>
+    </figure>
+    <div class="wm-latest-album-text">
+      <h2>
+        <a href="album-single-post.html">{{ album.album_title }}</a>
+      </h2>
+      <span></span>
+      <div class="clearfix"></div>
+      <a href="/album/{{ album.id }}" class="wm-bayalbum-btn wm-bgcolor"
+        >read more</a
+      >
+    </div>
+  </div>
+</li>
